@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Share to Cooked.wiki</title>
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <ol>
+      <li>
+        Install this web app using Chrome on Android (or any other
+        browser/operating system combination that supports
+        <a
+          href="https://developer.chrome.com/docs/capabilities/web-apis/web-share-target"
+          >share targets</a
+        >).
+      </li>
+      <li>
+        When on a recipe's web page, choose "Cooked.wiki Share" as the
+        destination in the system's Share dialog.
+      </li>
+      <li>
+        You'll be redirected to the
+        <code>https://cooked.wiki/ + url</code> page.
+      </li>
+    </ol>
+    <p>
+      This
+      <a href="https://web.dev/explore/progressive-web-apps"
+        >progressive web app</a
+      >
+      is unaffiliated with <a href="https://cooked.wiki/">Cooked.wiki</a>.
+    </p>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("service-worker.js");
+      }
+    </script>
+  </body>
+</html>
