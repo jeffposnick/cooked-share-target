@@ -1,6 +1,6 @@
 {
   "background_color": "#2196f3",
-  "display": "browser",
+  "display": "standalone",
   "description": "A share target that will redirect to the Cooked.wiki version of the current recipe page.",
   "icons": [
     {
