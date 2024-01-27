@@ -1,6 +1,6 @@
 {
   "background_color": "#2196f3",
-  "display": "standalone",
+  "display": "browser",
   "description": "A share target that will redirect to the Cooked.wiki version of the current recipe page.",
   "icons": [
     {
@@ -13,10 +13,10 @@
   "scope": "/",
   "share_target": {
     "action": "./share-target/",
-    "enctype": "application/x-www-form-urlencoded",
     "method": "GET",
+    "enctype": "application/x-www-form-urlencoded",
     "params": {
-      "url": "url"
+      "text": "recipeUrl"
     }
   },
   "short_name": "Cooked.wiki Share",
