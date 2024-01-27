@@ -1,3 +1,6 @@
+self.addEventListener("install", () => self.skipWaiting());
+self.addEventListener("activate", () => self.clients.claim());
+
 self.addEventListener("fetch", (event) => {
   const url = new URL(event.request.url);
   if (
